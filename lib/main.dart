@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
               // ignore: use_build_context_synchronously
               _showSnackBar(context,"بروزرسانی با موفقیت انجام شد!");
                 List jsonList = convert.jsonDecode(value.body);
-                if(jsonList.length>0){
+                if(jsonList.isEmpty){
 
                     for(int i = 0 ; i < jsonList.length; i++){
                         setState(() {
